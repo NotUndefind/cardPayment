@@ -13,18 +13,85 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
+}
+
+.container .leftSide .frontCard {
+  position: absolute;
+  min-width: 447px;
+  min-height: 245px;
+  background-image: url(/images/bg-card-front.png);
+  top: 10rem;
+  left: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.container .leftSide .frontCard div {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .leftSide .backCard {
+  position: absolute;
+  min-width: 447px;
+  min-height: 245px;
+  background-image: url(/images/bg-card-back.png);
+  top: 27rem;
+  left: 20rem;
+}
+
+.container .leftSide .backCard p {
+  position: absolute;
+  top: 6rem;
+  right: 3.5rem;
+}
+
+p {
+  color: white;
 }
 
 .container .rightSide {
-  margin: auto;
-}
-
-.container .rightSide form {
-  text-align: start;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container .rightSide form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.container .rightSide form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .rightSide form .lastInfo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container .rightSide form .lastInfo .date {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .rightSide form .lastInfo .date div {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  gap: 10px;
+}
+
+.container .rightSide form .codecvc {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

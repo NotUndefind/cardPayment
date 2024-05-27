@@ -14,31 +14,52 @@
 <body>
 
   <div class="container">
+
     <div class="leftSide">
 
+      <div class="frontCard">
+          <p class="numberCardResult">0000 0000 0000 0000</p>
+          <div>
+            <p class="nameCardResult">JANE APPLESEED</p>
+            <p class="dateCardReslut">00/00</p>
+          </div>
+      </div>
+
+      <div class="backCard">
+
+          <p class="codeCvcResult">000</p>
+      </div>
     </div>
 
     <div class="rightSide">
       <form action="">
-        <label for="name">CARDHOLDER NAME</label>
-        <input type="text" name="name" id="name" class="aloneRow">
+
+        <div>
+          <label for="name">CARDHOLDER NAME</label>
+          <input type="text" name="name" id="name" class="aloneRow">
+        </div>
         
-        <label for="number">CARD NUMBER</label>
-        <input type="number" name="number" id="number" class="aloneRow">
+        <div>
+          <label for="number">CARD NUMBER</label>
+          <input type="number" name="number" id="number" class="aloneRow">
+        </div>
 
         <div class="lastInfo">
-          <div class="date">
 
+          <div class="date">
             <label for="date">EXP. DATE (MM/YY)</label>
-            <input type="number" name="date" id="dateMonth">
-            <input type="number" name="date" id="dateYear">
+
+            <div>
+              <input type="number" name="date" id="dateMonth">
+              <input type="number" name="date" id="dateYear">
+            </div>
           </div>
             
           <div class="codecvc">
-
             <label for="code">CVC</label>
             <input type="number" name="code" id="code">
           </div>
+
         </div>
 
         <input type="submit" value="Confirm" class="aloneRow">
