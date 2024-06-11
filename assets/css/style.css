@@ -7,30 +7,27 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 3fr 4fr;
 }
 
 .container .leftSide {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url(/images/bg-main-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative;
 }
 
 .container .leftSide .frontCard {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  max-width: 447px;
-  max-height: 245px;
-  background-image: url(/images/bg-card-front.png);
-  top: 10rem;
-  left: 15rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
+  background: url(/images/bg-card-front.png);
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 2rem;
 }
 
 .container .leftSide .frontCard div {
@@ -45,18 +42,11 @@ body {
 }
 
 .container .leftSide .backCard {
-  position: absolute;
-  min-width: 447px;
-  min-height: 245px;
-  background-image: url(/images/bg-card-back.png);
-  top: 27rem;
-  left: 20rem;
-}
-
-.container .leftSide .backCard p {
-  position: absolute;
-  top: 6rem;
-  right: 3.5rem;
+  background: url(/images/bg-card-back.png);
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 2rem;
 }
 
 p {
@@ -71,14 +61,16 @@ p {
 }
 
 .container .rightSide form {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+  max-width: 70vh;
 }
 
 .container .rightSide form div {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .container .rightSide form .lastInfo {
@@ -93,7 +85,7 @@ p {
 
 .container .rightSide form .lastInfo .date div {
   display: grid;
-  grid-template-columns: 30% 30%;
+  grid-template-columns: 45% 45%;
   gap: 10px;
 }
 
